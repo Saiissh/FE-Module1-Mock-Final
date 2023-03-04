@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Ruda', sans-serif;
+}
+.project{
+    position: relative;
+}
+.h3{
+    padding: 20px !important;
+    margin-top: 5px !important;
+    
+}
+.topnav{
+    color: white;
+    background-color: black;
+    display: flex ;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 70px !important;
+}
+.showtab{
+    display: none;
+}
+.topnav  a{
+    text-decoration: none;
+    color: white;
+}
+
+.img-fluid-self{
+    width: 100vw;
+    height: auto;
+}
+
+.middlenav-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    font-size: 14px !important;
+    /* padding: 10px; */
+    gap: 15px;
+}
+
+.middlenav-content span:hover{
+    border-bottom: 1px solid white;
+}
+
+
+.nav-icons  img:hover{
+    padding: 0;margin: 0;
+    border: .5px solid white;
+    border-radius: 5px ;
+}
+
+@media (max-width:814px)
+{
+    .nav-icons{
+        display: none;
+    }
+    
+}
+@media (max-width:756px)
+{
+    .topnav{
+        justify-content: space-between;
+    }
+    
+    
+}
+
+
+@media (max-width:599px)
+{
+    .showtab{
+        display: block;
+    }
+    
+    .middlenav-content{
+        display: none;
+
+    }
+    .topnav{
+        justify-content: space-around;
+    }
+}
+/* .nav-icons{
+    gap: 20px;border: 2px solid red;
+} */
+
+
+/* ----------------------------top nav bar--------------------------------------- */
+
+
+
+.pizzaphoto{
+    position: relative;
+}
+
+.imgtext{
+    position: absolute;
+    z-index: 0;
+    /* border: 2px solid red; */
+    color: white;
+    width: 35%;
+    top: 30px;
+    left: 20px;
+    padding: 20px;
+}
+
+.imgtext .text2{
+
+    font-weight: bold;
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: 5px solid rgb(245, 82, 53);
+}
+@media (max-width:680px)
+{
+    .imgtext{
+        font-size: smaller;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 18px;
+    }
+}
+@media (max-width:525px)
+{
+    h1{
+        font-size: 14px;
+    }
+    .imgtext{
+        font-size: x-small;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:530px)
+{
+    .hideabout2{
+        display: none;
+    }
+}
+
+@media (max-width:434px)
+{
+    h1{
+        font-size: 12px;
+    }
+    .imgtext{
+        font-size: xx-small;
+        padding-top: 10px;
+        margin-top: 10px;
+        top: 10px;
+        left: 10px;
+        padding: 10px;
+    }
+
+    .imgtext .text2{
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+}
+/* ----------------------------------bg image --------------------------------------------------------------------- */
+
+.extrainfo{
+    display: none;
+}
+.lowercontent{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    background-color: black;
+    /* align-items: center; */
+}
+
+.h2underline{
+    width: 20%;
+    height: 4px;
+    background-color: rgb(249, 32, 32);
+    align-self: center;
+}
+.aboutus{
+    margin-top: 30px !important;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;margin: auto;
+}
+
+.aboutusinfo{
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    justify-content: space-evenly;
+}
+
+
+.menu{
+    margin-top: 30px !important;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;margin: auto;
+    /* border: 2px solid white; */
+     gap: 20px;
+}
+
+@media (max-width:813px)
+{
+    .hideabout{
+        display: none;
+    }
+}
+
+/* --------------------------pizza type lower----------------------------- */
+
+.pizzatypes{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+}
+.pizzaoption{
+    display: flex;
+    flex-flow: row wrap;
+    /* border: 2px solid wheat; */
+    gap: 5px;
+    /* padding: 5px; */
+}
+
+@media (max-width:818px)
+{
+    .pizzatypes {
+        gap: 0;
+    }
+}
+
+@media (max-width:790px)
+{
+    .pizzatypes {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        /* border: 2px solid red; */
+        justify-content: stretch;
+    }
+    .pizzaoption{
+        /* border: 2px solid pink; */
+        width: 100%;height: auto;
+    }
+    .infomedia{
+        display: block;
+        width: 100% !important;
+        height: auto;
+    }
+}
+@media (max-width:735px)
+{
+    .pizzatypes{
+        display: grid;
+        grid-template-rows: 1 auto;
+    }
+    .infomedia{
+        display: none;
+    }
+    .pizzaoption{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 70%;align-items: center;
+    }
+    .mediaimg{
+        width: 200px;
+    }
+}
+@media (max-width:458px)
+{
+    .mediaimg{
+        width: 150px;
+    }
+}
+/* -----------------pizza contents----------- */
+
+.findus{
+    margin-top: 30px !important;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;margin: auto; 
+    /* border: 2px solid white; */
+    gap: 20px;
+}
+.address{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.location{
+    gap: 20px;
+}
+.adj{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;gap: 10px;
+    margin-top: 20px;
+}
+
+
+/* ---------------------last section-------------------- */
+
+.lowest{
+    display: flex;
+    flex-flow: row wrap;
+    width: 80%;margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+    /* border: 2px solid wheat;  */
+    padding: 10px 5px;
+}
+.lowest div{
+display: flex;
+justify-content: center; gap: 10px;
+}
+.lastadd{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
